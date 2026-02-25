@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akil Sundararajan — Software Engineer</title>
+  <meta name="description" content="Software engineer building scalable backend systems and automation workflows.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+Tamil:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Language Toggle -->
+  <nav class="lang-toggle" aria-label="Language selector">
+    <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" data-lang="ta" aria-pressed="false">தமிழ்</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <p class="hero-greeting tamil-text" data-animate aria-hidden="true" id="tamilGreeting"></p>
+      <h1 class="hero-name" data-animate>Akil Sundararajan</h1>
+      <p class="hero-role" data-animate>Software Engineer</p>
+      <p class="hero-philosophy" data-animate>
+        <span data-en>Scalable systems. Reusable craft. Quiet ownership.</span>
+        <span data-ta class="tamil-text">அளவிடக்கூடிய அமைப்புகள். மீள்பயன்பாடு. அமைதியான உரிமை.</span>
+      </p>
+      <p class="hero-tamil-whisper tamil-text" data-animate>
+        <span data-en>அமைதியாக உருவாக்கும் மென்பொருள் பொறியாளர்</span>
+        <span data-ta class="tamil-text">அமைதியாக உருவாக்கும் மென்பொருள் பொறியாளர்</span>
+      </p>
+      <!-- Hero Kolam Motif -->
+      <div class="hero-kolam" data-animate aria-hidden="true">
+        <svg viewBox="0 0 120 40" preserveAspectRatio="xMidYMid meet">
+          <circle cx="40" cy="20" r="2" fill="currentColor" opacity="0.7"/>
+          <circle cx="60" cy="20" r="2.5" fill="currentColor" opacity="0.8"/>
+          <circle cx="80" cy="20" r="2" fill="currentColor" opacity="0.7"/>
+          <path d="M40 20 Q50 8 60 20 Q70 32 80 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <path d="M40 20 Q50 32 60 20 Q70 8 80 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+          <path d="M32 20 Q36 12 40 20 Q36 28 32 20Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+          <path d="M88 20 Q84 12 80 20 Q84 28 88 20Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+        </svg>
+      </div>
+
+      <div class="scroll-cue" data-animate aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolam Divider — Pattern A -->
+  <div class="kolam-divider" aria-hidden="true">
+    <svg viewBox="0 0 300 40" preserveAspectRatio="xMidYMid meet">
+      <circle cx="90" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <circle cx="120" cy="20" r="2" fill="currentColor" opacity="0.7"/>
+      <circle cx="150" cy="20" r="2.5" fill="currentColor" opacity="0.8"/>
+      <circle cx="180" cy="20" r="2" fill="currentColor" opacity="0.7"/>
+      <circle cx="210" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <path d="M90 20 Q105 6 120 20 Q135 34 150 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <path d="M90 20 Q105 34 120 20 Q135 6 150 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <path d="M150 20 Q165 6 180 20 Q195 34 210 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <path d="M150 20 Q165 34 180 20 Q195 6 210 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <line x1="50" y1="20" x2="85" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.25"/>
+      <line x1="215" y1="20" x2="250" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.25"/>
+    </svg>
+  </div>
+
+  <!-- Identity -->
+  <section class="identity" id="identity">
+    <div class="container">
+      <div class="identity-grid" data-animate>
+        <div class="identity-item">
+          <span class="identity-label">
+            <span data-en>Location</span>
+            <span data-ta class="tamil-text">இடம்</span>
+          </span>
+          <span class="identity-value">
+            <span data-en>Chennai, Tamil Nadu, India</span>
+            <span data-ta class="tamil-text">ஓசூர், தமிழ்நாடு, இந்தியா</span>
+          </span>
+        </div>
+        <div class="identity-item">
+          <span class="identity-label">
+            <span data-en>Role</span>
+            <span data-ta class="tamil-text">பணி</span>
+          </span>
+          <span class="identity-value">
+            <span data-en>Member Technical Staff, Zoho Corporation</span>
+            <span data-ta class="tamil-text">தொழில்நுட்ப உறுப்பினர், Zoho Corporation</span>
+          </span>
+        </div>
+        <div class="identity-item">
+          <span class="identity-label">
+            <span data-en>Focus</span>
+            <span data-ta class="tamil-text">கவனம்</span>
+          </span>
+          <span class="identity-value">
+            <span data-en>Backend systems · Automation workflows · Modular architecture</span>
+            <span data-ta class="tamil-text">Backend அமைப்புகள் · தானியங்கி செயல்முறைகள் · தொகுதி கட்டமைப்பு</span>
+          </span>
+        </div>
+        <div class="identity-item">
+          <span class="identity-label">
+            <span data-en>Education</span>
+            <span data-ta class="tamil-text">கல்வி</span>
+          </span>
+          <span class="identity-value">
+            <span data-en>MBA — SASTRA University, Thanjavur · 2025</span>
+            <span data-ta class="tamil-text">MBA — சாஸ்திரா பல்கலைக்கழகம், தஞ்சாவூர் · 2025</span>
+          </span>
+        </div>
+        <div class="identity-item">
+          <span class="identity-label identity-label--repeat">
+            <span data-en>Education</span>
+            <span data-ta class="tamil-text">கல்வி</span>
+          </span>
+          <span class="identity-value">
+            <span data-en>B.Tech ECE — SASTRA University, Thanjavur · 2023</span>
+            <span data-ta class="tamil-text">B.Tech ECE — சாஸ்திரா பல்கலைக்கழகம், தஞ்சாவூர் · 2023</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolam Divider — Pattern B -->
+  <div class="kolam-divider" aria-hidden="true">
+    <svg viewBox="0 0 300 40" preserveAspectRatio="xMidYMid meet">
+      <path d="M130 20 L150 8 L170 20 L150 32 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+      <path d="M110 20 Q130 4 150 20 Q170 36 190 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+      <path d="M110 20 Q130 36 150 20 Q170 4 190 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+      <circle cx="110" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <circle cx="150" cy="20" r="2" fill="currentColor" opacity="0.7"/>
+      <circle cx="190" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <line x1="70" y1="20" x2="105" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+      <line x1="195" y1="20" x2="230" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+    </svg>
+  </div>
+
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-title" data-animate>
+        <span data-en>Experience</span>
+        <span data-ta class="tamil-text">பயணம்</span>
+        <span class="section-title-tamil tamil-text" aria-hidden="true">பயணம்</span>
+      </h2>
+
+      <div class="timeline">
+        <div class="timeline-item" data-animate>
+          <div class="timeline-meta">
+            <span class="timeline-duration">Jan 2023 — Present</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-company">Zoho Corporation</h3>
+            <p class="timeline-role">Member Technical Staff · Chennai</p>
+            <ul class="timeline-impact">
+              <li>
+                <span data-en>Built scalable backend modules using Java on Zoho's internal frameworks</span>
+                <span data-ta class="tamil-text">Zoho-வின் உள் கட்டமைப்பில் Java பயன்படுத்தி அளவிடக்கூடிய backend தொகுதிகள் உருவாக்கம்</span>
+              </li>
+              <li>
+                <span data-en>Designed and deployed RESTful APIs for product features and automation</span>
+                <span data-ta class="tamil-text">தயாரிப்பு அம்சங்கள் மற்றும் தானியங்கிக்கான RESTful API-கள் வடிவமைப்பு மற்றும் வரிசைப்படுத்தல்</span>
+              </li>
+              <li>
+                <span data-en>Accelerated product launches through reusable, modular backend systems</span>
+                <span data-ta class="tamil-text">மீள்பயன்பாடு கொண்ட தொகுதி backend அமைப்புகள் மூலம் தயாரிப்பு வெளியீடுகளை துரிதப்படுத்தல்</span>
+              </li>
+              <li>
+                <span data-en>Prototyped new features early to influence product direction</span>
+                <span data-ta class="tamil-text">தயாரிப்பு திசையை வழிநடத்த புதிய அம்சங்களை முன்கூட்டியே முன்மாதிரி செய்தல்</span>
+              </li>
+              <li>
+                <span data-en>Collaborated closely with PMs and senior engineers on roadmap decisions</span>
+                <span data-ta class="tamil-text">வரைபட முடிவுகளில் PM-கள் மற்றும் மூத்த பொறியாளர்களுடன் நெருக்கமான ஒத்துழைப்பு</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-meta">
+            <span class="timeline-duration">Feb 2022 — Mar 2022</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-company">Neurostellar</h3>
+            <p class="timeline-role">Software Development Intern · IITM Research Park</p>
+            <ul class="timeline-impact">
+              <li>
+                <span data-en>Developed Android and iOS applications using Flutter</span>
+                <span data-ta class="tamil-text">Flutter பயன்படுத்தி Android மற்றும் iOS செயலிகள் உருவாக்கம்</span>
+              </li>
+              <li>
+                <span data-en>Integrated hardware and backend data flow via Bluetooth</span>
+                <span data-ta class="tamil-text">Bluetooth வழியாக வன்பொருள் மற்றும் backend தரவு ஓட்டம் ஒருங்கிணைப்பு</span>
+              </li>
+              <li>
+                <span data-en>Built backend services with AWS Amplify</span>
+                <span data-ta class="tamil-text">AWS Amplify கொண்டு backend சேவைகள் கட்டமைப்பு</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolam Divider — Pattern C -->
+  <div class="kolam-divider" aria-hidden="true">
+    <svg viewBox="0 0 300 40" preserveAspectRatio="xMidYMid meet">
+      <circle cx="120" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <circle cx="150" cy="20" r="2.5" fill="currentColor" opacity="0.75"/>
+      <circle cx="180" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <path d="M120 20 Q120 10 130 10 Q140 10 135 20 Q140 30 130 30 Q120 30 120 20Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+      <path d="M150 20 Q150 8 162 8 Q174 8 168 20 Q174 32 162 32 Q150 32 150 20Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.45"/>
+      <path d="M180 20 Q180 10 170 10 Q160 10 165 20 Q160 30 170 30 Q180 30 180 20Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.4"/>
+      <path d="M135 20 Q142 14 150 20" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+      <path d="M165 20 Q158 14 150 20" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+      <line x1="80" y1="20" x2="115" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+      <line x1="185" y1="20" x2="220" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+    </svg>
+  </div>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-animate>
+        <span data-en>Highlighted Projects</span>
+        <span data-ta class="tamil-text">முன்னிலைப்படுத்தப்பட்ட படைப்புகள்</span>
+        <span class="section-title-tamil tamil-text" aria-hidden="true">படைப்புகள்</span>
+      </h2>
+
+      <div class="project-list">
+        <div class="project-item" data-animate>
+          <button class="project-header" aria-expanded="false">
+            <h3 class="project-name">
+              <span data-en>Homeversity</span>
+              <span data-ta class="tamil-text">Homeversity</span>
+            </h3>
+            <p class="project-line">
+              <span data-en>Campus application used by 15,000+ students at SASTRA</span>
+              <span data-ta class="tamil-text">மாணவர் பயன்பாட்டிற்கான ஒருங்கிணைந்த செயலி</span>
+            </p>
+            <span class="project-expand" aria-hidden="true">+</span>
+          </button>
+          <div class="project-details">
+            <p>
+              <span data-en>Flutter-based app enabling event registration, academic access, and real-time updates. Designed for both online and offline campus usage.</span>
+              <span data-ta class="tamil-text">நிகழ்வு பதிவு, கல்வி அணுகல், நிகழ்நேர புதுப்பிப்புகளை செயல்படுத்தும் Flutter செயலி. ஆன்லைன் மற்றும் ஆஃப்லைன் பயன்பாட்டிற்காக வடிவமைக்கப்பட்டது.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="project-item" data-animate>
+          <button class="project-header" aria-expanded="false">
+            <h3 class="project-name">
+              <span data-en>Easy Donate</span>
+              <span data-ta class="tamil-text">Easy Donate</span>
+            </h3>
+            <p class="project-line">
+              <span data-en>Connecting donors with people in need</span>
+              <span data-ta class="tamil-text">நன்கொடையாளர்களை தேவையுள்ளவர்களுடன் இணைக்கும் செயலி</span>
+            </p>
+            <span class="project-expand" aria-hidden="true">+</span>
+          </button>
+          <div class="project-details">
+            <p>
+              <span data-en>Flutter + Firebase application with complete UI/UX design. Built as an entry for Google Solution Challenge 2020.</span>
+              <span data-ta class="tamil-text">முழுமையான UI/UX வடிவமைப்புடன் Flutter + Firebase செயலி. Google Solution Challenge 2020-க்காக கட்டமைக்கப்பட்டது.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolam Divider — Pattern D -->
+  <div class="kolam-divider" aria-hidden="true">
+    <svg viewBox="0 0 300 40" preserveAspectRatio="xMidYMid meet">
+      <circle cx="150" cy="20" r="2.5" fill="currentColor" opacity="0.75"/>
+      <path d="M150 20 Q140 10 150 6 Q160 10 150 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+      <path d="M150 20 Q140 30 150 34 Q160 30 150 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+      <path d="M150 20 Q140 14 136 20 Q140 26 150 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+      <path d="M150 20 Q160 14 164 20 Q160 26 150 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+      <circle cx="110" cy="20" r="1.5" fill="currentColor" opacity="0.5"/>
+      <circle cx="190" cy="20" r="1.5" fill="currentColor" opacity="0.5"/>
+      <line x1="115" y1="20" x2="133" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+      <line x1="167" y1="20" x2="185" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+      <line x1="70" y1="20" x2="105" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.15"/>
+      <line x1="195" y1="20" x2="230" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.15"/>
+    </svg>
+  </div>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-animate>
+        <span data-en>Skills</span>
+        <span data-ta class="tamil-text">திறன்கள்</span>
+        <span class="section-title-tamil tamil-text" aria-hidden="true">திறன்கள்</span>
+      </h2>
+
+      <div class="skills-grid" data-animate>
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span data-en>Languages</span>
+            <span data-ta class="tamil-text">மொழிகள்</span>
+          </h3>
+          <p class="skill-items">Java · Dart · SQL · C++</p>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span data-en>Backend & Data</span>
+            <span data-ta class="tamil-text">பின்பக்கம் & தரவு</span>
+          </h3>
+          <p class="skill-items">RESTful APIs · MySQL · Firebase · JSON</p>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span data-en>Tools & Platforms</span>
+            <span data-ta class="tamil-text">கருவிகள் & தளங்கள்</span>
+          </h3>
+          <p class="skill-items">Git · Postman · AWS · Zoho Internal Frameworks</p>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">
+            <span data-en>Engineering</span>
+            <span data-ta class="tamil-text">பொறியியல்</span>
+          </h3>
+          <p class="skill-items">System Design · Modular Architecture · Prototyping · Mentoring</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolam Divider — Pattern E -->
+  <div class="kolam-divider" aria-hidden="true">
+    <svg viewBox="0 0 300 40" preserveAspectRatio="xMidYMid meet">
+      <circle cx="100" cy="20" r="1.5" fill="currentColor" opacity="0.5"/>
+      <circle cx="125" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <circle cx="150" cy="20" r="2.5" fill="currentColor" opacity="0.75"/>
+      <circle cx="175" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <circle cx="200" cy="20" r="1.5" fill="currentColor" opacity="0.5"/>
+      <path d="M100 20 Q112 8 125 20 Q137 32 150 20 Q162 8 175 20 Q187 32 200 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+      <path d="M100 20 Q112 32 125 20 Q137 8 150 20 Q162 32 175 20 Q187 8 200 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+      <line x1="60" y1="20" x2="95" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+      <line x1="205" y1="20" x2="240" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+    </svg>
+  </div>
+
+  <!-- Leadership -->
+  <section class="leadership" id="leadership">
+    <div class="container">
+      <h2 class="section-title" data-animate>
+        <span data-en>Leadership</span>
+        <span data-ta class="tamil-text">தலைமை</span>
+        <span class="section-title-tamil tamil-text" aria-hidden="true">தலைமை</span>
+      </h2>
+
+      <div class="leadership-list" data-animate>
+        <div class="leadership-item">
+          <span class="leadership-label">
+            <span data-en>Developer Community — SASTRA</span>
+            <span data-ta class="tamil-text">டெவலப்பர் சமூகம் — SASTRA</span>
+          </span>
+          <span class="leadership-detail">
+            <span data-en>Team Lead · Aug 2021 – Aug 2022</span>
+            <span data-ta class="tamil-text">குழுத் தலைவர் · ஆகஸ்ட் 2021 – ஆகஸ்ட் 2022</span>
+          </span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-label">
+            <span data-en>Led a 30-member student developer team</span>
+            <span data-ta class="tamil-text">30 பேர் கொண்ட மாணவர் குழுவை வழிநடத்தியது</span>
+          </span>
+          <span class="leadership-detail">
+            <span data-en>Workshops for 1500+ students</span>
+            <span data-ta class="tamil-text">1500+ மாணவர்களுக்கு பயிலரங்குகள்</span>
+          </span>
+        </div>
+        <div class="leadership-item">
+          <span class="leadership-label">
+            <span data-en>Mentored peers in app development</span>
+            <span data-ta class="tamil-text">செயலி உருவாக்கத்தில் சகாக்களுக்கு வழிகாட்டல்</span>
+          </span>
+          <span class="leadership-detail">
+            <span data-en>Open-source tools · Problem-solving practices</span>
+            <span data-ta class="tamil-text">திறந்த மூல கருவிகள் · சிக்கல் தீர்க்கும் நெறிமுறைகள்</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolam Divider — Pattern F: Grand kolam -->
+  <div class="kolam-divider kolam-divider--grand" aria-hidden="true">
+    <svg viewBox="0 0 360 60" preserveAspectRatio="xMidYMid meet">
+      <circle cx="90" cy="30" r="1.5" fill="currentColor" opacity="0.45"/>
+      <circle cx="120" cy="30" r="2" fill="currentColor" opacity="0.55"/>
+      <circle cx="150" cy="30" r="2" fill="currentColor" opacity="0.65"/>
+      <circle cx="180" cy="30" r="3" fill="currentColor" opacity="0.8"/>
+      <circle cx="210" cy="30" r="2" fill="currentColor" opacity="0.65"/>
+      <circle cx="240" cy="30" r="2" fill="currentColor" opacity="0.55"/>
+      <circle cx="270" cy="30" r="1.5" fill="currentColor" opacity="0.45"/>
+      <path d="M90 30 Q105 12 120 30 Q135 48 150 30 Q165 12 180 30 Q195 48 210 30 Q225 12 240 30 Q255 48 270 30" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <path d="M90 30 Q105 48 120 30 Q135 12 150 30 Q165 48 180 30 Q195 12 210 30 Q225 48 240 30 Q255 12 270 30" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <path d="M165 30 L180 18 L195 30 L180 42 Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.35"/>
+      <path d="M180 30 Q174 22 180 16 Q186 22 180 30" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+      <path d="M180 30 Q174 38 180 44 Q186 38 180 30" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+      <line x1="40" y1="30" x2="85" y2="30" stroke="currentColor" stroke-width="0.8" opacity="0.15"/>
+      <line x1="275" y1="30" x2="320" y2="30" stroke="currentColor" stroke-width="0.8" opacity="0.15"/>
+    </svg>
+  </div>
+
+  <!-- Philosophy -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <h2 class="section-title" data-animate>
+        <span data-en>Philosophy</span>
+        <span data-ta class="tamil-text">தத்துவம்</span>
+        <span class="section-title-tamil tamil-text" aria-hidden="true">தத்துவம்</span>
+      </h2>
+
+      <div class="philosophy-statements">
+        <p class="philosophy-line" data-animate>
+          <span data-en>Ownership over assignment.</span>
+          <span data-ta class="tamil-text">பணிக்கு அப்பால் உரிமை.</span>
+        </p>
+        <p class="philosophy-line" data-animate>
+          <span data-en>Reusability is respect for the next engineer.</span>
+          <span data-ta class="tamil-text">மீள்பயன்பாடு என்பது அடுத்த பொறியாளருக்கான மரியாதை.</span>
+        </p>
+        <p class="philosophy-line" data-animate>
+          <span data-en>Ship early. Learn faster. Iterate quietly.</span>
+          <span data-ta class="tamil-text">விரைவாக அனுப்பு. வேகமாகக் கற்றுக்கொள். அமைதியாக மேம்படுத்து.</span>
+        </p>
+        <p class="philosophy-line" data-animate>
+          <span data-en>Clarity scales. Cleverness doesn't.</span>
+          <span data-ta class="tamil-text">தெளிவு விரிவடையும். புத்திசாலித்தனம் விரிவடையாது.</span>
+        </p>
+        <p class="philosophy-line philosophy-line--tamil tamil-text" data-animate>யாதும் ஊரே, யாவரும் கேளிர்.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kolam Divider — Pattern A repeated (bookend) -->
+  <div class="kolam-divider" aria-hidden="true">
+    <svg viewBox="0 0 300 40" preserveAspectRatio="xMidYMid meet">
+      <circle cx="120" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <circle cx="150" cy="20" r="2.5" fill="currentColor" opacity="0.75"/>
+      <circle cx="180" cy="20" r="2" fill="currentColor" opacity="0.6"/>
+      <path d="M120 20 Q135 8 150 20 Q165 32 180 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <path d="M120 20 Q135 32 150 20 Q165 8 180 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      <line x1="80" y1="20" x2="115" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+      <line x1="185" y1="20" x2="220" y2="20" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+    </svg>
+  </div>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="contact-text" data-animate>
+        <span data-en>Let's build something meaningful together.</span>
+        <span data-ta class="tamil-text">அர்த்தமுள்ள ஒன்றை ஒன்றாக உருவாக்குவோம்.</span>
+      </p>
+      <div class="contact-links" data-animate>
+        <a href="mailto:akilsundararajan@gmail.com" class="contact-link" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M22 4L12 13L2 4"/>
+          </svg>
+        </a>
+        <a href="https://github.com/akillika" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/akils" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="contact-signature" data-animate>Built with care. <span class="tamil-text">அக்கறையுடன் உருவாக்கப்பட்டது.</span></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
