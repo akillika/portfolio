@@ -35,39 +35,62 @@
    ============================================ */
 (function () {
   const langBtns = document.querySelectorAll('.lang-btn');
+  const body = document.body;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let switching = false;
 
   langBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const lang = btn.dataset.lang;
-      const isAlreadyActive = btn.classList.contains('active');
-      if (isAlreadyActive) return;
+      if (btn.classList.contains('active') || switching) return;
+      switching = true;
 
-      // Add switching class for fade-out
-      document.body.classList.add('lang-switching');
+      // Update button states immediately
+      langBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
 
-      setTimeout(() => {
-        // Toggle language
+      // Instant switch if reduced motion
+      if (reducedMotion) {
         if (lang === 'ta') {
-          document.body.classList.add('lang-ta');
+          body.classList.add('lang-ta');
           document.documentElement.lang = 'ta';
         } else {
-          document.body.classList.remove('lang-ta');
+          body.classList.remove('lang-ta');
+          document.documentElement.lang = 'en';
+        }
+        switching = false;
+        return;
+      }
+
+      // Phase 1: Fade out current content
+      body.classList.add('lang-fading-out');
+
+      setTimeout(() => {
+        // Swap language (display toggles)
+        if (lang === 'ta') {
+          body.classList.add('lang-ta');
+          document.documentElement.lang = 'ta';
+        } else {
+          body.classList.remove('lang-ta');
           document.documentElement.lang = 'en';
         }
 
-        // Update active states
-        langBtns.forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-pressed', 'false');
-        });
-        btn.classList.add('active');
-        btn.setAttribute('aria-pressed', 'true');
+        // Phase 2: Hold new content at opacity 0, then fade in
+        body.classList.remove('lang-fading-out');
+        body.classList.add('lang-fading-in');
 
-        // Remove switching class for fade-in
-        setTimeout(() => {
-          document.body.classList.remove('lang-switching');
-        }, 50);
-      }, 300);
+        // Double rAF ensures browser has painted the display swap
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            body.classList.remove('lang-fading-in');
+            switching = false;
+          });
+        });
+      }, 200);
     });
   });
 })();
